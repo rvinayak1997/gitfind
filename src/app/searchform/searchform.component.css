@@ -1,8 +1,11 @@
 .example-card{
-    max-width: 230px;
-    background-color:lightgray
+    max-width: 300px;
+    background-color:lightgray;
 }
 .main{
     margin:0 auto ;
     max-width: 300px;
+}
+form{
+    margin-bottom: 30px;
 }

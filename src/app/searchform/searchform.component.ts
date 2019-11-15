@@ -29,7 +29,7 @@ export class SearchformComponent implements OnInit {
       this.showSpinner = false;
     }
     // tslint:disable-next-line: align
-    else{
+    else {
       this.http.get('https://api.github.com/users/' + this.userForm.value.username + '?access_token=beba3c150021bfb49769385927dfa59fac2cdf04').subscribe(Response => {
         console.log(Response);
         this.data = Response;
