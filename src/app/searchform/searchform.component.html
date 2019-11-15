@@ -1,7 +1,7 @@
 <div class="main">
     <form  [formGroup]="userForm" (ngSubmit)="onSubmit()">
-        <mat-form-field class="example-full-width">
-          <input matInput placeholder="Enter username" formControlName="username">
+        <mat-form-field class="example-full-width" style="width:100%">
+                <input matInput placeholder="Enter username" formControlName="username">
         </mat-form-field>
         <button type="submit" mat-raised-button color="warn">Search</button>
       </form>
@@ -12,7 +12,9 @@
           <mat-card-subtitle>{{data.location}}</mat-card-subtitle>
         </mat-card-header>
         <img mat-card-image src={{data.avatar_url}}>
-        <mat-card-content><p>{{data.bio}}</p></mat-card-content>
+        <mat-card-content><p>{{data.bio}}</p>
+        <a href="{{data.html_url}}" target="_blank">View Github Profile</a>
+        </mat-card-content>
       </mat-card>
-      <div *ngIf="!errormessage && !showSpinner">No Data To Display</div>
+      <div *ngIf="!errormessage && !showSpinner">No Data To Display !!Sorry!! </div>
 </div>
